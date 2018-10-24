@@ -35,4 +35,4 @@ if(cp>sp):
 elif(cp==sp):
 	print("Draw")
 else:
-	print("U WON")
+	print("You WON")
