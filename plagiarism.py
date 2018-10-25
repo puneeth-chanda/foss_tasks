@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-m=str(input())
+m=str(input("file name:"))
 file1=open(r"/home/puneeth/Desktop/fossentry/"+m,"r")
 a=file1.readline()
 r=requests.get("http://www.google.com/search?btnG=1&q="+a)
