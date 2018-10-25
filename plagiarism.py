@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-file1=open(r"/home/puneeth/Desktop/fossentry/p.txt","r")
+m=str(input())
+file1=open(r"/home/puneeth/Desktop/fossentry/"+m,"r")
 a=file1.readline()
 r=requests.get("http://www.google.com/search?btnG=1&q="+a)
 data=r.text
@@ -9,4 +10,5 @@ k=soup.select("h3")
 for i in k:
 	name=i.get_text()
 	print(name)
+	#
 
